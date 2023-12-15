@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "FillingProgressBar"
 include(":fillingprogressbar")
+include(":fpbtester")
