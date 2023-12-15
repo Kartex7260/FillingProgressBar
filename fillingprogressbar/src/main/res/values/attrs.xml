@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FillingProgressBar">
+        <attr name="diameter" format="dimension|reference" />
+        <attr name="strokeWidth" format="dimension|reference" />
+
+        <attr name="backStrokeColor" format="color|reference" />
+        <attr name="frontFillColor" format="color|reference" />
+
+        <attr name="progress" format="float|reference" />
+    </declare-styleable>
+</resources>

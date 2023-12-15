@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FillingProgressBar">
+        <item name="diameter">18dp</item>
+        <item name="strokeWidth">2dp</item>
+
+        <item name="backStrokeColor">?attr/colorOnSurface</item>
+        <item name="frontFillColor">?attr/colorPrimary</item>
+
+        <item name="progress">0.0</item>
+    </style>
+
+    <style name="FillingProgressBar.Secondary">
+        <item name="frontFillColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="FillingProgressBar.Tertiary">
+        <item name="frontFillColor">?attr/colorTertiary</item>
+    </style>
+</resources>
