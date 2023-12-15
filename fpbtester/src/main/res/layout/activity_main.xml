@@ -7,9 +7,49 @@
     tools:context=".MainActivity">
 
     <kanti.fillingprogressbar.FillingProgressBar
-        android:id="@+id/fillingProgressBar"
+        android:id="@+id/fillingProgressBar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="18dp" />
+
+    <kanti.fillingprogressbar.FillingProgressBar
+        android:id="@+id/fillingProgressBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/fillingProgressBar2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="0.75" />
+
+    <kanti.fillingprogressbar.FillingProgressBar
+        android:id="@+id/fillingProgressBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/fillingProgressBar3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="0.5" />
+
+    <kanti.fillingprogressbar.FillingProgressBar
+        android:id="@+id/fillingProgressBar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/fillingProgressBar4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="0.25" />
+
+    <kanti.fillingprogressbar.FillingProgressBar
+        android:id="@+id/fillingProgressBar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/fillingProgressBar5"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
