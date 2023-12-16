@@ -6,7 +6,10 @@
 
         <attr name="backStrokeColor" format="color|reference" />
         <attr name="frontFillColor" format="color|reference" />
+        <attr name="disabledColor" format="color|reference" />
 
         <attr name="progress" format="float|reference" />
+
+        <attr name="android:enabled" format="boolean|reference" />
     </declare-styleable>
 </resources>

@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="FillingProgressBar">
+    <style name="Widget.Kanti.FillingProgressBar" parent="">
         <item name="diameter">18dp</item>
         <item name="strokeWidth">2dp</item>
 
-        <item name="backStrokeColor">?attr/colorOnSurface</item>
+        <item name="backStrokeColor">?attr/colorOnSurfaceVariant</item>
         <item name="frontFillColor">?attr/colorPrimary</item>
+        <item name="disabledColor">?attr/colorOnSurface</item>
 
         <item name="progress">0.0</item>
 
         <item name="android:padding">15dp</item>
+
+        <item name="android:enabled">true</item>
     </style>
 
-    <style name="FillingProgressBar.Secondary">
+    <style name="Widget.Kanti.FillingProgressBar.Secondary" parent="Widget.Kanti.FillingProgressBar">
         <item name="frontFillColor">?attr/colorSecondary</item>
     </style>
 
-    <style name="FillingProgressBar.Tertiary">
+    <style name="Widget.Kanti.FillingProgressBar.Tertiary" parent="Widget.Kanti.FillingProgressBar">
         <item name="frontFillColor">?attr/colorTertiary</item>
     </style>
 </resources>
