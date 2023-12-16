@@ -8,6 +8,8 @@
         <item name="frontFillColor">?attr/colorPrimary</item>
 
         <item name="progress">0.0</item>
+
+        <item name="android:padding">15dp</item>
     </style>
 
     <style name="FillingProgressBar.Secondary">

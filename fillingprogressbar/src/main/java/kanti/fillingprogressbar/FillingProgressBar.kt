@@ -60,8 +60,8 @@ class FillingProgressBar @JvmOverloads constructor(
 		@ColorInt get() = mFrontFillColor
 		set(@ColorInt value) {
 			mFrontFillColor = value
-			paintFrontStroke.color = value
-			paintFill.color = colorLightModifying()
+			paintFrontStroke.color = colorLightModifying()
+			paintFill.color = value
 			invalidate()
 		}
 
@@ -103,13 +103,13 @@ class FillingProgressBar @JvmOverloads constructor(
 			style = Paint.Style.STROKE
 		}
 		paintFrontStroke = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-			color = mFrontFillColor
+			color = colorLightModifying()
 			alpha = (255 * mProgress).toInt()
 			strokeWidth = mStrokeWidth
 			style = Paint.Style.STROKE
 		}
 		paintFill = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-			color = colorLightModifying()
+			color = mFrontFillColor
 			alpha = (255 * mProgress).toInt()
 		}
 	}
@@ -117,8 +117,8 @@ class FillingProgressBar @JvmOverloads constructor(
 	override fun onDraw(canvas: Canvas) {
 		super.onDraw(canvas)
 
-		val centerX = paddingLeft + (width / 2f)
-		val centerY = paddingTop + (height / 2f)
+		val centerX = paddingLeft + (mDiameter / 2f)
+		val centerY = paddingTop + (mDiameter / 2f)
 
 		val radius = mDiameter / 2
 		val strokeRadius = radius - mStrokeWidth / 2
