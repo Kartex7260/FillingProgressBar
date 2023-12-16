@@ -5,6 +5,7 @@ plugins {
 
 android {
 	namespace = "kanti.fillingprogressbar"
+	version = "1.0.0"
 	compileSdk = 34
 
 	defaultConfig {
