@@ -9,7 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/fillingProgressBar-compose" />
             <option value="$PROJECT_DIR$/fillingprogressbar" />
+            <option value="$PROJECT_DIR$/fpb-compose-tester" />
             <option value="$PROJECT_DIR$/fpbtester" />
           </set>
         </option>
